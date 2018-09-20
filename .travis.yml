@@ -21,7 +21,7 @@ addons:
   coverity_scan:
     project:
       name: "PeterHuewe/tpm-emulator"
-      description: "<Your project description here>"
+      description: "PeterHuewe/tpm-emulator"
     notification_email: peterhuewe@gmx.de
     build_command_prepend:  mkdir -p build && cd build 
     build_command: cmake -DBUILD_DEV=OFF ../ && make
