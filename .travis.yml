@@ -12,7 +12,7 @@ env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
-   - secure: "aJhRUD5fzRgKHk56CVYVpEWaGaAbvz3Z7MqJRuGedvwlS9Et8Gc4z2u/rEtGqG+8DD6k6s7h5IUmp0Q6iG8nkzA0trfjH8cwzrkCEoGtUYOjbmRWfNtTToRcbxai+MK0jWf/Bq0NoplS8ZGebhQnFw/zvNfiduEfGCrh9YhPyJQ="
+   - secure: "j0o/9h3/Lx+uILIex3uY0Nkr+NG7bXSp5E2xinrEaXo0kOK5ny8LH46NhfegyejUg75zKtKx7v3BEegdvXXhKtMhWrCCtZsdK2tLnFES+oKlUk3Md+CRiaiYuhencjNttC7q9ABdAMPLl1sFVjvnYMAGyXf1XHd8+69Tzr908DY="
 
 before_install:
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
