@@ -1,7 +1,6 @@
 env:
   global:
-    secure: "HX4Uy/179AB8/hJA6RwTG9uK6kpqBVS525qj9chLNYNtm9w1UP1f2O8oZeRMMehYugmZ+wfo8iYgzJbFpZ3JEKUg/TgnJndtyY4Y6nxhfFXbFwYXUpQilmb+Ek9l7rGnSsaFNSO3O1s49gzWltBIzCW4xEURJn+SIPIK55kqOis="
-
+    secure: "J29/ntLw9L6cZwmzz/cuYKs7lZ30zGcAW+3BRys56BcBNGy/h1i/ScKuVNTVeGngYfnpVsifDheZNOv7u+WI6cjOiA3mQaf+vtYy/VPp49GVIKhrt1H8RK0+ZalkOy3V3FAIecH3BxbwAeGhmDmEbSr/Prhy3ijIVF/67j/Qx+GUNkY6AFWO78NUvsrx88RIbGJ6lMVz6RDdtmzwNnIS1cXRkxmeK8tfr1brf2jQoqSzUswmfLAYy/n0RoZww7VzcL5O/9nATon6b36hG8XAU04AINqko19/ZxQWUuX2kHwGe3UTRcHvzJSB+z2I/vumvnfLSoQI9Q4DO/uvd62ap+V/4Rbi2tEvNb/kqHMpB9BswCCJTZkGqRcCvgMjzLbVpbewQmlH4n2zD35uReeIiZibileG5flkVIa3x3Fw/mo0nWa5YKCE49cQsETPRLBdfleyqtFIaEScVxgDIWvxxJq9mCybvIZ9VgsthoKtcspCUcNen8ptNwzuGd2TzHeL5rs1WLJGwSlnIzGlRrbNsDb+HHgDCSZr7AKTE9H+JFbg3gKu8NtoM/M+KPXDUn03Z0RFYildsMh1Q8C58ZeHTPbX/ZMZN8VWRQfKD7YANueOEji37jeSDpWY2Iyq0Q0d65M/slm1jrR+x+C98VBpB/Iw8o1R/qOqFlqL9MXX6mg="
 language: c
 addons:
   apt:
@@ -13,7 +12,6 @@ addons:
      - libssl-dev 
 
 before_install:
-  - echo $COVERITY_SCAN_TOKEN
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 addons:
