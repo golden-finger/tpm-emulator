@@ -20,8 +20,8 @@ addons:
       name: "PeterHuewe/tpm-emulator"
       description: "PeterHuewe/tpm-emulator"
     notification_email: peterhuewe@gmx.de
-    build_command_prepend:  mkdir -p build &&  && cd build && cmake -DBUILD_DEV=OFF ../
-    build_command:  make
+    build_command_prepend: mkdir -p build && cd build && cmake -DBUILD_DEV=OFF ../
+    build_command: make
     branch_pattern: coverity_scan
 
 script:  mkdir -p build && cd build && cmake -DBUILD_DEV=OFF ../ && make && cd ..
